@@ -45,18 +45,18 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 18px;
-      color: #151875;
+      color: $text-dark;
       text-decoration: none;
       &:hover {
-        color: #fb2e86;
-        border-bottom: 1px #fb2e86 solid;
+        color: $light-color;
+        border-bottom: 1px $light-color solid;
         padding-bottom: 4px;
         cursor: pointer;
       }
     }
     .active {
-      color: #fb2e86;
-      border-bottom: 1px #fb2e86 solid;
+      color: $light-color;
+      border-bottom: 1px $light-color solid;
       padding-bottom: 4px;
     }
   }
@@ -71,7 +71,7 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 42px;
-    color: #151875;
+    color: $text-dark;
     text-align: center;
   }
 }
@@ -85,7 +85,7 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 42px;
-    color: #151875;
+    color: $text-dark;
     text-align: center;
   }
   .products {
@@ -102,7 +102,7 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 42px;
-    color: #151875;
+    color: $text-dark;
     text-align: center;
   }
   &--blogs {
@@ -113,7 +113,7 @@
     .active {
       .blogs-container--blogs--blog--content--title,
       .blogs-container--blogs--blog--content--more {
-        color: #fb2e86;
+        color: $light-color;
       }
     }
     &--blog {
@@ -145,7 +145,7 @@
               font-weight: 600;
               font-size: 14px;
               line-height: 14px;
-              color: #151875;
+              color: $text-dark;
             }
           }
           &--date-box {
@@ -162,7 +162,7 @@
               font-weight: 600;
               font-size: 14px;
               line-height: 14px;
-              color: #151875;
+              color: $text-dark;
             }
           }
         }
@@ -172,7 +172,7 @@
           font-weight: 700;
           font-size: 18px;
           line-height: 18px;
-          color: #151875;
+          color: $text-dark;
           margin-top: 31px;
         }
         &--info {
@@ -192,7 +192,7 @@
           font-size: 16px;
           line-height: 30px;
           text-decoration-line: underline;
-          color: #151875;
+          color: $text-dark;
         }
       }
     }

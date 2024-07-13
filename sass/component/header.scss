@@ -20,7 +20,7 @@ header {
           font-size: 48px;
           line-height: 59px;
           text-transform: capitalize;
-          color: #000000;
+          color: $black-color;
           margin-bottom: 13px;
         }
         &--info {
@@ -40,7 +40,7 @@ header {
           font-size: 36px;
           line-height: 44px;
           text-transform: capitalize;
-          color: #000000;
+          color: $black-color;
         }
         &--btn {
           background: linear-gradient(180deg, #ec368d 0%, #d72828 100%);
@@ -51,7 +51,7 @@ header {
           font-size: 24px;
           line-height: 29px;
           text-transform: capitalize;
-          color: #ffffff;
+          color: $white-color;
           padding: 30px 87px;
           margin-top: 59px;
           span {
@@ -115,7 +115,7 @@ header {
           font-family: "Josefin Sans";
           font-size: 31.6785px;
           line-height: 40px;
-          color: #ffffff;
+          color: $white-color;
           padding: 0;
           margin: 0;
           text-align: right;
@@ -172,7 +172,7 @@ header {
             font-size: 25px;
             line-height: 44px;
             text-transform: capitalize;
-            color: #000000;
+            color: $black-color;
           }
           &--btn {
             font-size: 20px;
@@ -213,7 +213,7 @@ header {
             font-size: 25px;
             line-height: 30px;
             text-transform: capitalize;
-            color: #000000;
+            color: $black-color;
           }
           &--btn {
             font-size: 20px;
@@ -259,11 +259,11 @@ header {
     span {
       height: 12.87px;
       width: 12.87px;
-      border: #fb2e86 3px solid;
+      border: $light-color 3px solid;
       transform: rotate(-45deg);
     }
     .active {
-      background-color: #fb2e86;
+      background-color: $light-color;
     }
   }
 }

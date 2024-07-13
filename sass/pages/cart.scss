@@ -21,7 +21,7 @@
           font-weight: 700;
           font-size: 20px;
           line-height: 20px;
-          color: #1d3178;
+          color: $text-color;
         }
         &--icons-box {
           &--location {
@@ -38,9 +38,9 @@
               font-weight: 400;
               font-size: 14px;
               line-height: 14px;
-              color: #000000;
-              background: #ffffff;
-              border: 1px solid #fb2e86;
+              color: $black-color;
+              background: $white-color;
+              border: 1px solid $light-color;
             }
           }
         }
@@ -60,8 +60,8 @@
       font-weight: 600;
       font-size: 16px;
       line-height: 16px;
-      color: #ffffff;
-      background: #fb2e86;
+      color: $white-color;
+      background: $light-color;
       border-radius: 2px;
     }
   }

@@ -23,7 +23,7 @@
       font-weight: 500;
       font-size: 36px;
       line-height: 50px;
-      color: #000000;
+      color: $black-color;
     }
     .title-price {
       margin-bottom: 19px;
@@ -41,7 +41,7 @@
         font-size: 18px;
         line-height: 27px;
         text-align: center;
-        color: #151875;
+        color: $text-dark;
       }
     }
   }

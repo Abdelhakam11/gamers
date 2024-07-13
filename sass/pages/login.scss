@@ -6,7 +6,7 @@
     padding: 50px 55px;
     max-width: 544px;
     min-height: 474px;
-    background: #ffffff;
+    background: $white-color;
     box-shadow: 0px 0px 25px 10px #f8f8fb;
     &--title-box {
       gap: 7px;
@@ -15,7 +15,7 @@
         font-family: "Josefin Sans";
         font-size: 32px !important;
         line-height: 38px !important;
-        color: #000000;
+        color: $black-color;
       }
       &--sub-title {
         font-family: "Lato";
@@ -32,7 +32,7 @@
           padding: 15px 13px 18px;
           max-width: 432px;
           height: 52px;
-          background: #ffffff;
+          background: $white-color;
           border: 1px solid #c2c5e1;
           border-radius: 2px;
           font-family: "Lato";
@@ -59,14 +59,14 @@
       button {
         cursor: pointer;
         padding: 13px 0 14px;
-        background: #fb2e86;
+        background: $light-color;
         border-radius: 3px;
         font-family: "Lato";
         font-style: normal;
         font-weight: 700;
         font-size: 17px;
         line-height: 20px;
-        color: #ffffff;
+        color: $white-color;
       }
     }
     .create-box {
@@ -81,7 +81,7 @@
         line-height: 20px;
         color: #9096b2;
         .marker {
-          color: #fd0054;
+          color: $main-color;
           text-decoration: none;
         }
       }

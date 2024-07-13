@@ -10,7 +10,7 @@
         font-family: "Josefin Sans";
         font-size: 36px;
         line-height: 48px;
-        color: #151875;
+        color: $text-dark;
         margin-bottom: 13px;
       }
       &--info {
@@ -46,7 +46,7 @@
         font-family: "Josefin Sans";
         font-size: 36px;
         line-height: 48px;
-        color: #151875;
+        color: $text-dark;
         margin-bottom: 26px;
       }
       &--methods {
@@ -86,7 +86,7 @@
         font-family: "Josefin Sans";
         font-size: 36px;
         line-height: 48px;
-        color: #151875;
+        color: $text-dark;
       }
       &--info {
         margin-top: 20px;
@@ -128,7 +128,7 @@
             font-family: "Josefin Sans";
             font-size: 16px;
             line-height: 26px;
-            background: #fb2e86;
+            background: $light-color;
             border-radius: 3px;
             width: 157px;
             padding: 9px 0;

@@ -14,7 +14,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
-    color: #1d3178;
+    color: $text-color;
     margin-bottom: 16px;
   }
   &--sub-title {
@@ -23,7 +23,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #1d3178;
+    color: $text-color;
     margin-bottom: 25px;
   }
   .contact-information {
@@ -52,7 +52,7 @@
           font-size: 14px;
           line-height: 17px;
           letter-spacing: 0.01em;
-          color: #fd0054;
+          color: $main-color;
           text-decoration: none;
         }
       }
@@ -89,7 +89,7 @@
         font-family: "Josefin Sans";
         font-size: 18px;
         line-height: 21px;
-        color: #1d3178;
+        color: $text-color;
         margin-bottom: 42px;
       }
       &--info {
@@ -116,8 +116,8 @@
         font-family: "Josefin Sans";
         font-size: 16px;
         line-height: 19px;
-        color: #ffffff;
-        background: #fb2e86;
+        color: $white-color;
+        background: $light-color;
         border-radius: 2px;
         width: 182px;
         text-align: center;
