@@ -1,0 +1,70 @@
+<section class="cart-section">
+  <div class="container" style="max-width: 1440px">
+    <div class="row justify-content-between">
+      <div class="col-md-8 col-12">
+        <div class="row">
+          <div class="col-12 header--outter">
+            <div
+              class="col-10 mx-auto d-flex justify-content-between gx-3 align-items-center header--outter--inner"
+            >
+              <h2 class="header--outter--inner--title">My Cart(5)</h2>
+              <div
+                class="header--outter--inner--icons-box d-flex align-items-center"
+              >
+                <img
+                  src="./images//icons/location-icon.png"
+                  class="header--outter--inner--icons-box--location"
+                />
+                <span class="header--outter--inner--icons-box--deliver"
+                  >Deliver to</span
+                >
+                <div class="dropdown header--outter--inner--icons-box--drop">
+                  <button
+                    class="btn header--outter--inner--icons-box--drop--btn"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    482001
+                    <span><img src="./images/icons/vector-bottom.png" /></span>
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">match 1</a></li>
+                    <li><a class="dropdown-item" href="#">match 2</a></li>
+                    <li><a class="dropdown-item" href="#">match 3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="table-responsive col-10 mx-auto">
+              <div data-include="./components/cart/table/table.html"></div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-10 mx-auto d-flex justify-content-between btns-box">
+              <button type="button" class="btn btns-box--btn">
+                Update Cart
+              </button>
+              <button type="button" class="btn btns-box--btn">
+                Clear Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 mt-5 mt-md-0 col-12 totals-container">
+        <h2 class="totals-container--title">Cart Totals</h2>
+        <div
+          class="totals-container--card"
+          data-include="./components/invoice/invoice.html"
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>

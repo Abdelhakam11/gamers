@@ -1,0 +1,92 @@
+<section>
+  <div
+    class="container shipping-container d-flex flex-column"
+    style="max-width: 1440px"
+  >
+    <h2 class="shipping-container--title">Shipping</h2>
+    <span class="shipping-container--sub-title"
+      >Cart/ Information/ Shipping</span
+    >
+    <div class="row justify-content-between">
+      <div class="col-md-8 col-12 contact-information">
+        <form
+          class="contact-information--inner d-flex flex-column position-relative"
+        >
+          <h2 class="contact-information--inner--title">Contact Information</h2>
+          <div
+            class="contact-information--inner--login-container d-flex position-absolute"
+          >
+            <span>Already have an account?</span>
+            <a href="#">Log in</a>
+          </div>
+          <input
+            type="text"
+            class="contact-information--inner--email"
+            placeholder="Email or mobile phone number"
+          />
+          <div
+            class="contact-information--inner--info d-flex align-items-center"
+          >
+            <span> <img src="./images/icons/check-icon.png" /> </span>
+            <span> Keep me up to date on news and excluive offers </span>
+          </div>
+
+          <h2 class="contact-information--inner--title">Shipping address</h2>
+
+          <div class="contact-information--inner--name-box d-flex">
+            <input
+              type="text"
+              class="contact-information--inner--name-box--first input-border"
+              placeholder="First name (optional)"
+            />
+            <input
+              type="text"
+              class="contact-information--inner--name-box--last"
+              placeholder="Last name"
+            />
+          </div>
+
+          <input
+            type="text"
+            class="contact-information--inner--address"
+            placeholder="Address"
+          />
+          <input
+            type="text"
+            class="contact-information--inner--appaetnentment"
+            placeholder="Appaetnentment,suit,e.t.c (optinal)"
+          />
+          <input
+            type="text"
+            class="contact-information--inner--city"
+            placeholder="City"
+          />
+          <div class="contact-information--inner--country-box d-flex">
+            <input
+              type="text"
+              class="contact-information--inner--country-box--country"
+              placeholder="India"
+            />
+            <input
+              type="text"
+              class="contact-information--inner--country-box--postal-code input-border"
+              placeholder="Postal Code"
+            />
+          </div>
+          <button type="submit" class="contact-information--inner--btn">
+            Continue Shipping
+          </button>
+        </form>
+      </div>
+      <div class="col-xl-3 col-md-4 col-12 totals-container">
+        <div class="table-responsive">
+          <div data-include="./components/shipping/table/table.html"></div>
+        </div>
+        <div
+          class="totals-container--card"
+          data-include="./components/invoice/invoice.html"
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>

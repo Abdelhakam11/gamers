@@ -1,0 +1,166 @@
+@import "../main.scss";
+.contact-section {
+  margin-top: 99px;
+  margin-bottom: 158px;
+  padding: 0 83px;
+  .contact-container {
+    &--information {
+      max-width: 550px;
+      &--title {
+        font-family: "Josefin Sans";
+        font-size: 36px;
+        line-height: 48px;
+        color: #151875;
+        margin-bottom: 13px;
+      }
+      &--info {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        color: #8a8fb9;
+        margin-bottom: 40px;
+      }
+      &--colors-box {
+        gap: 14px;
+        &--color {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          &:first-child {
+            background: #5625df;
+          }
+          &:nth-child(2) {
+            background: #ff27b7;
+          }
+          &:nth-child(3) {
+            background: #37daf3;
+          }
+        }
+      }
+    }
+
+    &--way-box {
+      &--title {
+        font-family: "Josefin Sans";
+        font-size: 36px;
+        line-height: 48px;
+        color: #151875;
+        margin-bottom: 26px;
+      }
+      &--methods {
+        max-width: 518px;
+        gap: 53px;
+        .row {
+          row-gap: 53px;
+        }
+        &--method {
+          padding: 0;
+          gap: 15px;
+          &--color {
+            width: 45px !important;
+            height: 45px !important;
+            border-radius: 50%;
+          }
+          &--info-box {
+            gap: 1px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            color: #8a8fb9;
+          }
+        }
+      }
+    }
+  }
+  .form-container {
+    margin-top: 120px;
+
+    &--information {
+      margin-top: 30px;
+      padding-right: 16px;
+      &--title {
+        font-family: "Josefin Sans";
+        font-size: 36px;
+        line-height: 48px;
+        color: #151875;
+      }
+      &--info {
+        margin-top: 20px;
+        margin-bottom: 46px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        color: #8a8fb9;
+        &--form {
+          input {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #8a8fb9;
+            padding: 13px 11px;
+            border: 1px solid rgba(164, 182, 200, 0.7);
+            border-radius: 3px;
+          }
+          textarea {
+            padding: 17px 11px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #8a8fb9;
+            border: 1px solid rgba(164, 182, 200, 0.7);
+            border-radius: 3px;
+            height: 166px;
+            margin-top: 47px;
+            margin-bottom: 33px;
+            resize: none;
+          }
+          &--btn {
+            font-family: "Josefin Sans";
+            font-size: 16px;
+            line-height: 26px;
+            background: #fb2e86;
+            border-radius: 3px;
+            width: 157px;
+            padding: 9px 0;
+            border: none;
+            color: $white-color;
+          }
+          &--group {
+            column-gap: 24px;
+            margin-bottom: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .contact-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-section {
+    .contact-container {
+      &--information {
+        &--title {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

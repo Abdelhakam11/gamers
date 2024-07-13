@@ -1,0 +1,86 @@
+@import "../main.scss";
+@import "../component/table.scss";
+@import "../component/totals.scss";
+
+//cart
+.cart-section {
+  margin-top: 115px;
+  margin-bottom: 145px;
+  padding-right: 46px;
+  padding-left: 81px;
+  .header {
+    &--outter {
+      border-bottom: 1px solid #e5e5e5;
+
+      &--inner {
+        margin-bottom: 15.5px;
+        margin-top: 14px;
+        &--title {
+          font-family: "Josefin Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 20px;
+          color: #1d3178;
+        }
+        &--icons-box {
+          &--location {
+            margin-right: 11px;
+          }
+          &--deliver {
+            margin-right: 12px;
+          }
+          &--drop {
+            &--btn {
+              padding: 10px 8px 10px 12px;
+              font-family: "Josefin Sans";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 14px;
+              color: #000000;
+              background: #ffffff;
+              border: 1px solid #fb2e86;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btns-box {
+    gap: 10px;
+    margin-top: 37px;
+    &--btn {
+      padding: 12px 0px 11px 0px;
+      width: 134px;
+      text-align: center;
+      font-family: "Josefin Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      color: #ffffff;
+      background: #fb2e86;
+      border-radius: 2px;
+    }
+  }
+}
+
+//component
+
+
+@media only screen and (max-width: $screen-lg) {
+  .cart-section {
+    margin-top: 80px;
+    margin-bottom: 27px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cart-section {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

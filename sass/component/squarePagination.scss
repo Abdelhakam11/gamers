@@ -1,0 +1,15 @@
+.square-pagination {
+    margin-top: 50.9px;
+    gap: 16px;
+    &--item {
+      width: 43.6px;
+      height: 10.9px;
+      background: #febad7;
+      border-radius: 27.2529px;
+    }
+    .active {
+      margin: 0 2px;
+      width: 65.41px;
+      background: #fb2e86;
+    }
+  }

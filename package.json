@@ -1,0 +1,14 @@
+{
+  "name": "gamers",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass --watch ./sass/pages/login.scss:./css/login.css ./sass/pages/about.scss:./css/about.css ./sass/pages/cart.scss:./css/cart.css ./sass/pages/complete.scss:./css/complete.css ./sass/pages/contact.scss:./css/contact.css ./sass/pages/featured.scss:./css/featured.css ./sass/pages/home.scss:./css/home.css ./sass/pages/productDetails.scss:./css/productDetails.css ./sass/pages/shipping.scss:./css/shipping.css ./sass/pages/shop.scss:./css/shop.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.6"
+  }
+}

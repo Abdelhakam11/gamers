@@ -1,0 +1,166 @@
+@import "../main.scss";
+@import "../component/features.scss";
+.busniess-container {
+  padding: 0 20px;
+  gap: 48px;
+  margin-top: 92px;
+  &--img-box {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    max-width: 555px;
+    &--image {
+      width: 100%;
+    }
+    &:before {
+      z-index: -3;
+      left: -15px;
+      content: "";
+      position: absolute;
+      background-color: #2b3cab;
+      width: 100%;
+      height: calc(100% + 19px);
+      border-radius: 6px;
+    }
+  }
+  &--info {
+    margin-top: 41px;
+    max-width: 550px;
+    &--title {
+      font-family: "Josefin Sans";
+      font-size: 36px;
+      line-height: 48px;
+      color: #151875;
+    }
+    &--details {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      color: #8a8fb9;
+      margin-top: 14px;
+    }
+    &--btn {
+      background: #fb2e86;
+      border-radius: 3px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      color: $white-color;
+      padding: 9px 0;
+      width: 145px;
+      margin-top: 70px;
+    }
+  }
+}
+
+.features-container {
+  margin-top: 143px;
+  margin-bottom: 10px;
+  &--title {
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 42px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 67px;
+  }
+
+  .outer-box:nth-child(2) {
+    .features--card {
+      border-bottom: 2px solid #ff9100;
+    }
+  }
+}
+
+.clients {
+  margin-top: 122px;
+  margin-bottom: 77px;
+  padding-top: 82px;
+  padding-bottom: 66px;
+  background: #ffebf1;
+  &--container {
+    max-width: 689px;
+    text-align: center;
+    &--title {
+      font-family: "Josefin Sans";
+      font-size: 42px;
+      line-height: 26px;
+      color: #000000;
+      margin-bottom: 64px;
+    }
+    &--images-box {
+      gap: 13px;
+      img {
+        border-radius: 2px;
+        width: 55px;
+        height: 55px;
+      }
+      .active {
+        height: 59px;
+        transform: translateY(-9px);
+      }
+    }
+    &--author {
+      margin-top: 25px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &--position {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 26px;
+      color: #8a8fb9;
+    }
+    &--info {
+      margin-top: 14px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      color: #8a8fb9;
+    }
+    &--squares-pagination {
+      margin-top: 17px;
+      gap: 5px;
+      span {
+        width: 18px;
+        height: 3px;
+        background: #ff75b0;
+        border-radius: 3px;
+      }
+      .active {
+        width: 27px;
+        background: #fb2e86;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .busniess-container {
+    gap: 10px;
+    &--info {
+      margin-top: 41px;
+      max-width: 550px;
+      &--title {
+        color: #151875;
+      }
+      &--details {
+        margin-top: 10px;
+      }
+      &--btn {
+        margin-top: 20px;
+      }
+    }
+  }
+}

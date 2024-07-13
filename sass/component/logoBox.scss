@@ -1,0 +1,17 @@
+.logo-box {
+  gap: 0.832rem;
+  padding: 0 !important;
+  &--title {
+    margin: 0 !important;
+    font-family: "Salsa";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.32903rem;
+    line-height: 41px;
+    color: $main-color !important;
+    text-transform: uppercase;
+    &:hover {
+      color: $white-color !important;
+    }
+  }
+}

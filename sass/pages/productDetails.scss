@@ -1,0 +1,256 @@
+@import "../main.scss";
+
+$main-padding: 68px 135px;
+$small-padding: 30px 10px;
+
+.product-details {
+  padding: $main-padding;
+  &--title {
+    margin-bottom: 32px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #101750;
+  }
+  &--card {
+    &--container {
+      background: #ffffff;
+      box-shadow: 0px 0px 25px 10px #f6f4fd;
+      border-radius: 2px;
+      &--image-box {
+        position: relative;
+        overflow: hidden;
+        &--left {
+          position: absolute;
+          left: 12px;
+        }
+        &--image {
+        }
+        &--right {
+          position: absolute;
+          right: 22px;
+        }
+      }
+      &--content-box {
+        border-left: 1px solid #e5e5e5;
+        padding: 43px 2px 25px 41px;
+        &--title {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 29px;
+          color: #000000;
+          margin-bottom: 4px;
+        }
+        &--rating {
+          margin-bottom: 10px;
+          &--stars {
+            @include stars-rating(22px, 11.24px);
+            position: relative;
+            &:after {
+              font-family: "Lato";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 29px;
+              position: absolute;
+              top: -8px;
+              left: 100%;
+              content: "(22)";
+              color: #151875;
+            }
+          }
+        }
+        &--price {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 42px;
+          color: #fd0054;
+          margin-bottom: 7px;
+        }
+        &--delivery {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 23px;
+          color: #000000;
+        }
+        &--info {
+          max-width: 286px;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 23px;
+          color: #000000;
+        }
+        &--company {
+          gap: 3px;
+          &--time {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+          }
+        }
+        &--btns-box {
+          column-gap: 31px;
+          row-gap: 10px;
+          &--primary {
+            padding: 21px 54px;
+            background: #fb2e86;
+            border: 1px solid #fb2e86;
+            font-family: "Josefin Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            color: #ffffff;
+          }
+          &--unfilled {
+            padding: 21px 54px;
+            background: $white-color;
+            border: 1px solid #fb2e86;
+            font-family: "Josefin Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.details-container {
+  background: #ffebf1;
+  &--inner {
+    padding: 116px 122px 113px 130px;
+    &--header-box {
+      margin-bottom: 61px;
+      column-gap: 85px;
+      row-gap: 10px;
+      &--item {
+        font-family: "Josefin Sans";
+        font-size: 24px;
+        line-height: 28px;
+        color: #151875;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .active {
+        text-decoration-line: underline;
+      }
+    }
+    &--tempor-box {
+      margin-bottom: 36px;
+      &--title {
+        font-family: "Josefin Sans";
+        font-size: 22px;
+        line-height: 26px;
+        color: #151875;
+      }
+      &--info {
+        font-family: "Josefin Sans";
+        font-size: 16px;
+        line-height: 29px;
+        color: #a9acc6;
+      }
+    }
+    &--more {
+      &--title {
+        font-family: "Josefin Sans";
+        font-size: 22px;
+        line-height: 26px;
+        color: #151875;
+        margin-bottom: 16px;
+      }
+      &--list {
+        gap: 14px;
+        &--item {
+          gap: 8px;
+          font-family: "Josefin Sans";
+          font-size: 16px;
+          line-height: 29px;
+          color: #a9acc6;
+        }
+      }
+    }
+  }
+}
+
+.related-products {
+  padding: 0 120px 0 136px;
+  margin: 89px auto;
+
+  &--inner {
+    &--title {
+      font-family: "Josefin Sans";
+      font-size: 36px;
+      line-height: 42px;
+      color: #101750;
+      margin-bottom: 47px;
+    }
+    &--products {
+      max-width: 1144px;
+      &--card {
+        width: 100%;
+        max-width: 262px;
+        height: 312px;
+        img {
+          object-fit: cover;
+          @media only screen and (max-width: 500px) {
+            width: 100%;
+          }
+        }
+        &--detials {
+          &--information {
+            margin-top: 16px;
+            padding-right: 10px;
+            &--title {
+              font-family: "Josefin Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 16px;
+              color: #151875;
+            }
+
+            &--rating {
+              @include stars-rating(12px, 1.72px);
+            }
+          }
+          &--price {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            color: #151875;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .product-details,
+  .details-container--inner,
+  .related-products {
+    padding: $small-padding !important;
+    &--title {
+      text-align: center;
+    }
+  }
+}

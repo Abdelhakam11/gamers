@@ -1,0 +1,113 @@
+@import "../main.scss";
+
+.complete-container {
+  margin-top: 180px;
+  margin-bottom: 233px;
+  &--row {
+    max-width: 1020px;
+    &--header,
+    &--info {
+      max-width: 1020px;
+      padding-right: 210px;
+      padding-left: 168px;
+    }
+    &--header {
+      gap: 22.56px;
+      margin-bottom: 4px;
+      h1 {
+        font-family: "Josefin Sans";
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #101750;
+      }
+      img {
+        width: 87.02px;
+      }
+    }
+    &--info {
+      gap: 10px;
+      padding-bottom: 65px;
+      padding-top: 24px;
+      border-left: 1px dashed #d2d1d1;
+      border-bottom: 1px dashed #d2d1d1;
+      position: relative;
+      &:before {
+        content: "";
+        background: url(../../images/icons/clock-icon.png);
+        position: absolute;
+        width: 94px;
+        height: 94px;
+        left: -47px;
+        top: -105px;
+        display: block;
+        background-size: 100% 100%;
+        @media only screen and (max-width: 500px) {
+          width: 47.5px;
+          height: 47.5px;
+          left: -23.5px;
+          top: -57.5px;
+          display: block;
+          background-size: 100% 100%;
+        }
+      }
+      &:after {
+        content: "";
+        background: url(../../images/icons/checklist-icon.png);
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        right: -35px;
+        bottom: -35px;
+        background-size: 100% 100%;
+        display: block;
+        @media only screen and (max-width: 500px) {
+          width: 35px;
+          height: 35px;
+          right: -17.5px;
+          bottom: -17.5px;
+          display: block;
+          background-size: 100% 100%;
+        }
+      }
+      p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #8d92a7;
+        max-width: 625px;
+      }
+      button {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #ffffff;
+        background: #ff1788;
+        border-radius: 3px;
+        padding-top: 14px;
+        padding-bottom: 15px;
+        border: none;
+        width: 208px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .complete-container {
+    padding: 0 50px;
+    &--row {
+      &--header,
+      &--info {
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+    }
+  }
+}

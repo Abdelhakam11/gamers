@@ -1,0 +1,67 @@
+.totals-container {
+  &--title {
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    line-height: 23px;
+    color: #1d3178;
+    margin-bottom: 19px;
+    text-align: center;
+  }
+  &--card {
+    padding: 1px 22px 32px 23px;
+    background-color: #ffebf1;
+    &--item {
+      padding-bottom: 14px;
+      border-bottom: 2px solid #e8e6f1;
+      margin-top: 34px;
+      &--title {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1d3178;
+      }
+      &--price {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #15245e;
+      }
+    }
+    &--info {
+      span {
+        img {
+          width: 8px;
+          height: 8px;
+        }
+      }
+      gap: 7px;
+      margin-top: 27px;
+      margin-bottom: 35px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #8a91ab;
+    }
+    &--btn {
+      width: 100%;
+      padding-top: 11px;
+      padding-bottom: 12px;
+      text-align: center;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+      background: #19d16f;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+  }
+}

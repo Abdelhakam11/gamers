@@ -1,0 +1,200 @@
+@import "../main.scss";
+
+@import "../component/header.scss";
+@import "../component/shopProducts.scss";
+@import "../component/features.scss";
+@import "../component/squarePagination.scss";
+.featured-container {
+  margin-top: 51px;
+  margin-bottom: 81.3px;
+  &--title {
+    text-align: center;
+    margin-bottom: 81px;
+    a {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 51px;
+      color: #1a0b5b;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+.leatest-container {
+  margin-bottom: 80.8px;
+  &--title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    color: #1a0b5b;
+    text-align: center;
+    margin-bottom: 19px;
+  }
+  .leatest-bar {
+    column-gap: 57px;
+    row-gap: 15px;
+    margin-bottom: 55px;
+    &--item {
+      font-family: "Josefin Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      color: #151875;
+      text-decoration: none;
+      &:hover {
+        color: #fb2e86;
+        border-bottom: 1px #fb2e86 solid;
+        padding-bottom: 4px;
+        cursor: pointer;
+      }
+    }
+    .active {
+      color: #fb2e86;
+      border-bottom: 1px #fb2e86 solid;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+.offers-container {
+  margin-bottom: 55px;
+  &--title {
+    margin-bottom: 55px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 42px;
+    color: #151875;
+    text-align: center;
+  }
+}
+
+.trending-container {
+  margin-bottom: 51px;
+  &--title {
+    margin-bottom: 50.6px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 42px;
+    color: #151875;
+    text-align: center;
+  }
+  .products {
+    margin-bottom: 50.6px;
+  }
+}
+
+.blogs-container {
+  margin-bottom: 89px;
+  &--title {
+    margin-bottom: 51px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 42px;
+    color: #151875;
+    text-align: center;
+  }
+  &--blogs {
+    margin-right: auto;
+    margin-left: auto;
+    gap: 56px;
+    max-width: 1222px;
+    .active {
+      .blogs-container--blogs--blog--content--title,
+      .blogs-container--blogs--blog--content--more {
+        color: #fb2e86;
+      }
+    }
+    &--blog {
+      padding: 0 !important;
+      max-width: 370px;
+      background: $white-color;
+      box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+      border-radius: 5px;
+      overflow: hidden;
+      &--photo {
+        width: 100%;
+      }
+      &--content {
+        padding: 19px 0 35px 19px;
+        &--information {
+          gap: 13px;
+          &--author-box {
+            gap: 2px;
+            &--icon {
+              img {
+                width: 11.5px;
+                height: 11.5px;
+              }
+            }
+            &--author {
+              height: 11px;
+              font-family: "Josefin Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 14px;
+              color: #151875;
+            }
+          }
+          &--date-box {
+            gap: 2px;
+            &--icon {
+              img {
+                width: 11.5px;
+                height: 11.5px;
+              }
+            }
+            &--date {
+              font-family: "Josefin Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 14px;
+              color: #151875;
+            }
+          }
+        }
+        &--title {
+          font-family: "Josefin Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 18px;
+          color: #151875;
+          margin-top: 31px;
+        }
+        &--info {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          color: #72718f;
+          margin-top: 17px;
+        }
+        &--more {
+          margin-top: 14px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          text-decoration-line: underline;
+          color: #151875;
+        }
+      }
+    }
+  }
+}

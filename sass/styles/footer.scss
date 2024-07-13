@@ -1,0 +1,185 @@
+//footer
+.footer-container {
+  background-color: $black-color;
+  .inner-container {
+    padding: 100px 109px 91px;
+  }
+  &--contact {
+    gap: 50px;
+    margin-bottom: 35px;
+    &--subscribe {
+      max-width: 407px;
+      padding: 0 !important;
+      .logo-box {
+        margin-bottom: 15px;
+      }
+      &--container {
+        gap: 14px;
+        &--info {
+          max-width: 378px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 16px;
+          display: flex;
+          align-items: center;
+          color: $white-color;
+          opacity: 0.5;
+        }
+        &--form {
+          gap: 5px;
+          &--email-box {
+            width: 273px;
+            height: 38px;
+            input {
+              padding: 11px 18px;
+              background: transparent;
+              border: 1px solid #787878;
+              border-radius: 5px;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 13px;
+              line-height: 16px;
+              display: flex;
+              align-items: center;
+              color: #787878;
+              &:focus {
+                outline: none !important;
+                outline-width: 0 !important;
+                border: 1px solid #242424ca;
+                box-shadow: none;
+                background-color: transparent;
+              }
+            }
+          }
+          &--btn {
+            padding: 10px 25px;
+            border: 1px solid #fd0054;
+            border-radius: 5px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: $white-color;
+          }
+        }
+      }
+    }
+    &--categories {
+      &--container {
+        row-gap: 30px;
+        &--column {
+          &--title {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: $white-color;
+          }
+          &--items-container {
+            &--item {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 25px;
+              display: flex;
+              align-items: center;
+              color: $white-color !important;
+              opacity: 0.8;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .icons-container {
+    gap: 31px;
+    .social-bar {
+      margin-left: 18px;
+      gap: 14px;
+      img {
+        width: 23px;
+        height: 23px;
+      }
+    }
+    .methods-container {
+      padding-left: 28px;
+      padding-right: 61px;
+      &--download-box {
+        h4 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 25px;
+          display: flex;
+          align-items: center;
+          color: $white-color;
+          margin-right: 18px;
+        }
+        &--imgs-container {
+          gap: 32px;
+        }
+      }
+    }
+    .copy-right {
+      p {
+        text-align: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        color: $white-color;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $screen-lg) {
+  .footer-container {
+    .inner-container {
+      padding: 50px 20px;
+    }
+    &--contact {
+      &--categories {
+        &--container {
+          &--column {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $screen-lg) {
+  .footer-container {
+    .icons-container {
+      gap: 31px;
+      .social-bar {
+        margin-left: 0px;
+        gap: 14px;
+      }
+      .methods-container {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+    .methods-container--payments-box {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

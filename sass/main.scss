@@ -1,0 +1,41 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./fonts.scss";
+//base layout
+@import "./styles/base.scss";
+@import "./styles/navbar.scss";
+@import "./styles/footer.scss";
+
+// //components
+@import "./component/logoBox.scss";
+
+// @import "./component/squarePagination.scss";
+// @import "./component/header.scss";
+// @import "./component/shopProducts.scss";
+
+// //login
+// @import "./pages/login.scss";
+
+// //home
+// @import "./pages/home.scss";
+
+// //shop
+// @import "./pages/shop.scss";
+
+// //product detials
+// @import "./pages/productDetials.scss";
+
+// //cart
+// @import "./pages/cart.scss";
+
+// //shipping
+// @import "./pages/shipping.scss";
+
+// //complete
+// @import "./pages/complete.scss";
+
+// //contact
+// @import "./pages/contact.scss";
+
+// //about
+// @import "./pages/about.scss";
