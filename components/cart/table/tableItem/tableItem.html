@@ -1,0 +1,42 @@
+<th scope="row" class="align-middle">
+  <div class="d-flex product-container">
+    <div
+      class="product-container--image-box d-flex justify-content-center align-items-center"
+    >
+      <span class="product-container--image-box--exit">
+        <img src="./images/icons/exit-icon.png" />
+      </span>
+      <img src="{imgSrc}" />
+    </div>
+
+    <div class="d-flex flex-column product-container--content">
+      <h4 class="product-container--content--title">{title}</h4>
+      <p class="product-container--content--color">
+        Color: <span> {color} </span>
+      </p>
+    </div>
+  </div>
+</th>
+<td class="align-middle text-center">
+  <span class="price"> {price} </span>
+</td>
+<td class="align-middle text-center">
+  <div class="counter-box d-flex justify-content-between">
+    <button
+      type="button"
+      class="counter-box--decrease-btn counter-btn d-flex align-items-center justify-content-center"
+    >
+      <span>-</span>
+    </button>
+    <span class="counter-box--counter">{quantity}</span>
+    <button
+      type="button"
+      class="counter-box--increase-btn counter-btn d-flex align-items-center justify-content-center"
+    >
+      <span> &#43; </span>
+    </button>
+  </div>
+</td>
+<td class="align-middle text-end">
+  <span class="price"> {total} </span>
+</td>

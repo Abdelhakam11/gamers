@@ -1,0 +1,150 @@
+@import "../main.scss";
+@import "../component/table.scss";
+@import "../component/totals.scss";
+
+//shipping
+.shipping-container {
+  padding: 0 136px 0 134px;
+  margin-top: 76px;
+  margin-bottom: 116px;
+
+  &--title {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: $text-color;
+    margin-bottom: 16px;
+  }
+  &--sub-title {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $text-color;
+    margin-bottom: 25px;
+  }
+  .contact-information {
+    max-width: 770px;
+    padding: 63px 31px 66px 30px;
+    background: #ffebf1;
+    &--inner {
+      border-radius: 3px;
+      &--login-container {
+        top: 0;
+        right: 0;
+        gap: 4px;
+        span {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.01em;
+          color: #9cb1ff;
+        }
+        a {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.01em;
+          color: $main-color;
+          text-decoration: none;
+        }
+      }
+      .input-border {
+        border-bottom: 2px solid #bfc6e0 !important;
+      }
+      input[type="text"] {
+        border-bottom: 2px solid #ffebf1;
+        width: 100%;
+        padding-bottom: 17px;
+        background-color: transparent;
+        border: 0px solid;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9cb1ff;
+        margin-bottom: 38px;
+        &::placeholder {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          color: #9cb1ff;
+        }
+        &:focus {
+          border: 0px solid;
+          outline: none;
+        }
+      }
+      &--title {
+        font-family: "Josefin Sans";
+        font-size: 18px;
+        line-height: 21px;
+        color: $text-color;
+        margin-bottom: 42px;
+      }
+      &--info {
+        margin-bottom: 109px;
+        span {
+          img {
+            width: 8px;
+            height: 8px;
+          }
+        }
+        gap: 7px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #8a91ab;
+      }
+      &--country-box,
+      &--name-box {
+        gap: 30px;
+      }
+      &--btn {
+        font-family: "Josefin Sans";
+        font-size: 16px;
+        line-height: 19px;
+        color: $white-color;
+        background: $light-color;
+        border-radius: 2px;
+        width: 182px;
+        text-align: center;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border: none;
+        margin-top: 114px;
+      }
+    }
+  }
+  .totals-container {
+    table {
+      margin-top: 0;
+    }
+    &--card {
+      margin-top: 42px;
+    }
+  }
+}
+@media only screen and (max-width: $screen-lg) {
+  .shipping-container {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: $screen-md) {
+  .shipping-container {
+    padding: 10px;
+  }
+}

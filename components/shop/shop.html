@@ -1,0 +1,106 @@
+<div class="container shop-container">
+  <!-- Header Section -->
+  <div
+    class="row shop-container--header align-items-center justify-content-between"
+  >
+    <div class="col-3 shop-container--header--sidebar d-flex flex-column">
+      <h2 class="shop-container--header--sidebar--title">Laptops</h2>
+      <p class="shop-container--header--sidebar--info">
+        About 9,620 results (0.62 seconds)
+      </p>
+    </div>
+    <div
+      class="col-xl-8 col-lg-7 col-8 shop-container--header--products-container d-flex justify-content-center align-items-start"
+    >
+      <div class="d-flex shop-container--header--products-container--sort">
+        <span class="shop-container--header--products-container--sort--title"
+          >Sort By:</span
+        >
+        <div
+          class="dropdown shop-container--header--products-container--sort--match"
+        >
+          <button
+            class="btn shop-container--header--products-container--sort--match--btn"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Best Match
+            <span
+              ><img src="./images/icons/akar-icons_chevron-down.png"
+            /></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">match 1</a></li>
+            <li><a class="dropdown-item" href="#">match 2</a></li>
+            <li><a class="dropdown-item" href="#">match 3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="shop-container--header--products-container--view d-flex align-items-center"
+      >
+        <span class="shop-container--header--products-container--view--title"
+          >View:</span
+        >
+        <div class="shop-container--header--products-container--view--icons">
+          <img src="./images/icons/clarity_grid-view-solid.png" />
+          <img src="./images/icons/fa-solid_list.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toggle button for lg and smaller screens -->
+  <button
+    class="btn btn-primary d-lg-none"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#sidebarOffcanvas"
+    aria-controls="sidebarOffcanvas"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Inner Content Section -->
+  <div
+    class="row shop-container--inner justify-content-lg-center justify-content-center"
+  >
+    <!-- Sidebar for larger screens -->
+    <div
+      class="col-3 d-none d-lg-block shop-container--inner--sidebar"
+      data-include="./components/shop/sidebar/sidebar.html"
+    ></div>
+
+    <!-- Offcanvas sidebar for smaller screens -->
+    <div
+      class="offcanvas offcanvas-start d-lg-none"
+      tabindex="-1"
+      id="sidebarOffcanvas"
+      aria-labelledby="sidebarOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebarOffcanvasLabel">Sidebar</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div
+          class="shop-container--inner--sidebar"
+          data-include="./components/shop/sidebar/sidebar.html"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Products Container -->
+    <div
+      class="col-md-9 col-12 shop-container--inner--products-container d-flex flex-column justify-content-center align-items-center"
+      data-include="./components/shop/shopContainers/shopContainers.html"
+    ></div>
+  </div>
+</div>

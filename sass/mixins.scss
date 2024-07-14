@@ -1,0 +1,100 @@
+@mixin scale-header($scale) {
+  .images-container {
+    width: calc($scale * 574.75px) !important;
+    img {
+      transform: rotate(36.44deg);
+      width: 100%;
+      height: calc($scale * 381.27px);
+    }
+    .layer1 {
+      top: calc($scale * -37px);
+      right: calc($scale * -37.2px);
+      width: calc($scale * 487.54px);
+      height: calc($scale * 487.54px);
+    }
+    .layer2 {
+      width: calc($scale * 485.29px);
+      height: calc($scale * 485.29px);
+      top: calc($scale * -6.4px);
+      right: calc($scale * -6.1px);
+    }
+    .sale-badge {
+      width: calc($scale * 123.6px);
+      height: calc($scale * 125.35px);
+      top: calc($scale * -33px);
+      right: calc($scale * -27px);
+      padding: 0;
+      h4 {
+        font-size: calc($scale * 31.6785px);
+        line-height: calc($scale * 40px);
+      }
+    }
+  }
+}
+@mixin stars-rating($star-size, $star-gap) {
+  $unfilled-star-url: "../images/icons/star-grey.png";
+  $filled-star-url: "../images/icons/star-yellow.png";
+
+  .star-rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+
+    .stars-outer {
+      display: flex;
+      align-items: center;
+      
+      .star {
+        width: $star-size;
+        height: $star-size;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: $star-gap;
+        &:last-child{
+          margin-right: 0;
+        }
+
+        &.unfilled {
+          background-image: url("#{$unfilled-star-url}");
+        }
+
+        &.filled {
+          background-image: url("#{$filled-star-url}");
+        }
+      }
+    }
+  }
+}
+@mixin check-box(
+  $main-color,
+  $main-background,
+  $checked-color,
+  $checked-background
+) {
+  input[type="checkbox"] {
+    margin-right: 9px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 16px !important;
+    height: 16px !important;
+    background-color: $main-background;
+    appearance: none;
+    color: black;
+    &:after {
+      content: "\2713";
+      color: $main-color;
+      width: 9.37px;
+      height: 6.81px;
+    }
+    &:checked {
+      background-color: $checked-background;
+      width: 9.37px;
+      height: 6.81;
+      &:after {
+        content: "\2713";
+        color: $checked-color;
+      }
+    }
+  }
+}

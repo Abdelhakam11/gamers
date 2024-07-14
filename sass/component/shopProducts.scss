@@ -1,0 +1,53 @@
+.products {
+  max-width: 1017.95px;
+  margin: 0 auto;
+  row-gap: 80px;
+  column-gap: 31px;
+  .outer-box {
+    width: 318px;
+  }
+  &--product {
+    width: 318px;
+    max-width: 318px;
+    height: 319.16px;
+    background: #fecede;
+    box-shadow: 9.62302px 22.7453px 64.7367px rgba(196, 196, 196, 0.34);
+    border-radius: 43.0119px;
+    &--image {
+      filter: drop-shadow(0px 6.7354px 6.7354px rgba(0, 0, 0, 0.25))
+        drop-shadow(0px 6.7354px 6.7354px rgba(0, 0, 0, 0.25));
+    }
+    &--title {
+      font-family: "Josefin Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 50px;
+      color: $black-color;
+    }
+    .title-price {
+      margin-bottom: 19px;
+      .title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+      }
+      .price {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: $text-dark;
+      }
+    }
+  }
+}
+@media only screen and (min-width: $screen-lg) {
+  .products {
+    width: 1017.95px !important;
+  }
+}

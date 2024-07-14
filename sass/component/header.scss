@@ -1,0 +1,269 @@
+///header
+header {
+  background-color: #eeccd7;
+  .header-container {
+    padding-left: 79px;
+    &--details {
+      margin-bottom: 92px;
+      margin-top: 93px;
+      gap: 66px;
+      .rectangle {
+        width: 18px;
+        height: 211px;
+        background: linear-gradient(180deg, #ec368d 0%, #d72828 100%);
+      }
+      &--information {
+        &--title {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 59px;
+          text-transform: capitalize;
+          color: $black-color;
+          margin-bottom: 13px;
+        }
+        &--info {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 35px;
+          text-transform: capitalize;
+          color: #727272;
+          margin-bottom: 22px;
+        }
+        &--price {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 44px;
+          text-transform: capitalize;
+          color: $black-color;
+        }
+        &--btn {
+          background: linear-gradient(180deg, #ec368d 0%, #d72828 100%);
+          border-radius: 20px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 29px;
+          text-transform: capitalize;
+          color: $white-color;
+          padding: 30px 87px;
+          margin-top: 59px;
+          span {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    .images-container {
+      position: relative;
+      width: 574.75px;
+      filter: drop-shadow(0px 13.6037px 13.6037px rgba(0, 0, 0, 0.25))
+        drop-shadow(0px 13.6037px 13.6037px rgba(0, 0, 0, 0.25));
+      img {
+        transform: rotate(36.44deg);
+        width: 100%;
+        height: 381.27px;
+      }
+      .layer1 {
+        top: -37px;
+        right: -37.2px;
+        position: absolute;
+        z-index: -1;
+        border-radius: 50%;
+        width: 487.54px;
+        height: 487.54px;
+        background: linear-gradient(
+          180deg,
+          rgba(227, 48, 48, 0.28) 0%,
+          rgba(247, 112, 150, 0.0924) 100%
+        );
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: rotate(16.16deg);
+      }
+      .layer2 {
+        position: absolute;
+        width: 485.29px;
+        height: 485.29px;
+        top: -6.4px;
+        right: -6.1px;
+        z-index: -2;
+        border-radius: 50%;
+        background: linear-gradient(
+          180deg,
+          rgba(227, 48, 48, 0.28) 0%,
+          rgba(247, 112, 150, 0.0924) 100%
+        );
+        transform: rotate(16.16deg);
+      }
+      .sale-badge {
+        position: absolute;
+        width: 123.6px;
+        height: 125.35px;
+        top: -33px;
+        right: -27px;
+        background: url("../images/tools/bg-sale.svg");
+        transform: rotate(2.92deg);
+        background-size: cover;
+        padding: 39.5px 32px 21px;
+        h4 {
+          font-family: "Josefin Sans";
+          font-size: 31.6785px;
+          line-height: 40px;
+          color: $white-color;
+          padding: 0;
+          margin: 0;
+          text-align: right;
+          span {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1450px) {
+    .header-container {
+      @include scale-header(0.9);
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .header-container {
+      @include scale-header(0.65);
+      .images-container {
+        margin-right: 100px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .header-container {
+      padding-left: 20px;
+      @include scale-header(0.5);
+      .images-container {
+        margin-right: 40px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1080px) {
+    .header-container {
+      gap: 10px;
+      @include scale-header(0.5);
+      &--details {
+        gap: 40px;
+        .rectangle {
+          width: 18px;
+          height: 211px;
+          background: linear-gradient(180deg, #ec368d 0%, #d72828 100%);
+        }
+        &--information {
+          &--title {
+            font-size: 35px;
+            margin-bottom: 13px;
+          }
+          &--info {
+            font-size: 18px;
+            margin-bottom: 22px;
+          }
+          &--price {
+            font-size: 25px;
+            line-height: 44px;
+            text-transform: capitalize;
+            color: $black-color;
+          }
+          &--btn {
+            font-size: 20px;
+            padding: 15px 41px;
+            margin-top: 40px;
+            span {
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: $screen-sm) {
+    .header-container {
+      padding-left: 10px;
+      @include scale-header(0.35);
+      &--details {
+        gap: 10px;
+        margin-top: 60px;
+        .rectangle {
+          width: 18px;
+          height: 110px;
+          background: linear-gradient(180deg, #ec368d 0%, #d72828 100%);
+        }
+        &--information {
+          &--title {
+            font-size: 25px;
+            margin-bottom: 8px;
+            line-height: 30px;
+          }
+          &--info {
+            font-size: 15px;
+            line-height: 20px;
+            margin-bottom: 22px;
+          }
+          &--price {
+            font-size: 25px;
+            line-height: 30px;
+            text-transform: capitalize;
+            color: $black-color;
+          }
+          &--btn {
+            font-size: 20px;
+            padding: 7.5px 20px;
+            margin-top: 40px;
+            span {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    .header-container {
+      padding-left: 10px;
+      @include scale-header(0.3);
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .header-container {
+      position: relative;
+      .images-container {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+      }
+      @include scale-header(0.22);
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .header-container {
+      width: 100%;
+      @include scale-header(0.2);
+    }
+  }
+  .pagniation-container {
+    left: 50%;
+    bottom: 37px;
+    transform: translateX(-50%);
+    gap: 15.5px;
+    span {
+      height: 12.87px;
+      width: 12.87px;
+      border: $light-color 3px solid;
+      transform: rotate(-45deg);
+    }
+    .active {
+      background-color: $light-color;
+    }
+  }
+}

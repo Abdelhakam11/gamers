@@ -1,0 +1,104 @@
+nav {
+  background: $black-color;
+  .navbar-container {
+    margin: 0 auto !important;
+    padding: 18px 0 !important;
+    .logo-box {
+      padding-left: 43px !important;
+      padding-right: 142px !important;
+    }
+    &--list {
+      gap: 35px;
+      padding: 0 !important;
+
+      &--item {
+        margin: 0 !important;
+        padding: 0 !important;
+        a {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: $white-color !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          &:hover {
+            color: $light-color !important;
+          }
+        }
+        .active {
+          color: $light-color !important;
+        }
+      }
+    }
+    &--search-box {
+      width: 245px;
+      height: 35px;
+      background: $white-color;
+      border-radius: 50px;
+      padding: 7px 10px;
+      form {
+        gap: 10px;
+      }
+      &--input {
+        padding: 0 !important;
+        border: none;
+        height: 100%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $black-color;
+        &:focus {
+          outline: none !important;
+          outline-width: 0 !important;
+          box-shadow: none;
+        }
+      }
+      &--search-btn {
+        border: none;
+        background-color: transparent;
+        width: 13px;
+        height: 13px;
+        background: url("../images/icons/search.png");
+        background-repeat: no-repeat;
+      }
+    }
+    &--icons-box {
+      margin-left: 63px;
+      margin-right: 50px;
+      gap: 9px;
+      img {
+        width: 20px;
+        height: 20px;
+        &:hover {
+          transform: scale(1.5);
+          cursor: pointer;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+    .logo-box {
+      padding-left: 43px !important;
+      padding-right: 142px !important;
+    }
+    @media only screen and (max-width: 600px) {
+      .logo-box {
+        padding-left: 0px !important;
+        padding-right: 10px !important;
+      }
+    }
+    @media only screen and (max-width: 1250px) {
+      &--icons-box {
+        margin-left: 20px;
+      }
+    }
+    @media only screen and (max-width: 500px) {
+      &--icons-box {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div
+  class="related-products--inner--products--card d-flex flex-column align-items-center"
+>
+  <div class="d-flex justify-content-center overflow-hidden">
+    <img src="{imageSrc}" />
+  </div>
+
+  <div
+    class="related-products--inner--products--card--detials d-flex flex-column w-100 "
+  >
+    <div
+      class="related-products--inner--products--card--detials--information d-flex justify-content-between align-items-center"
+    >
+      <h2
+        class="related-products--inner--products--card--detials--information--title"
+      >
+        {title}
+      </h2>
+
+      <div
+        data-include="./components/rating/rating{rating}.html"
+        class="related-products--inner--products--card--detials--information--rating"
+      ></div>
+    </div>
+    <span class="related-products--inner--products--card--detials--price">
+      {price}
+    </span>
+  </div>
+</div>
