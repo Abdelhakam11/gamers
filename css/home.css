@@ -1021,10 +1021,6 @@ header .pagniation-container .active {
   gap: 56px;
   max-width: 1222px;
 }
-.blogs-container--blogs .active .blogs-container--blogs--blog--content--title,
-.blogs-container--blogs .active .blogs-container--blogs--blog--content--more {
-  color: #fb2e86;
-}
 .blogs-container--blogs--blog {
   padding: 0 !important;
   max-width: 370px;
@@ -1032,6 +1028,10 @@ header .pagniation-container .active {
   box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
   border-radius: 5px;
   overflow: hidden;
+}
+.blogs-container--blogs--blog:hover .blogs-container--blogs--blog--content--title,
+.blogs-container--blogs--blog:hover .blogs-container--blogs--blog--content--more {
+  color: #fb2e86;
 }
 .blogs-container--blogs--blog--photo {
   width: 100%;

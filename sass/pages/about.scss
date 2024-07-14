@@ -69,10 +69,8 @@
     margin-bottom: 67px;
   }
 
-  .outer-box:nth-child(2) {
-    .features--card {
-      border-bottom: 2px solid #ff9100;
-    }
+  .features--card:hover {
+    border-bottom: 2px solid #ff9100;
   }
 }
 

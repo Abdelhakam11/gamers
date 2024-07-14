@@ -424,7 +424,7 @@ nav .navbar-container .logo-box {
   color: #000000;
   margin-bottom: 67px;
 }
-.features-container .outer-box:nth-child(2) .features--card {
+.features-container .features--card:hover {
   border-bottom: 2px solid #ff9100;
 }
 
